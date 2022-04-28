@@ -17,7 +17,7 @@ Alguma descrição rápida e objetiva da API
 ><br/>
 >**Alunos:**<br/>
 >Maurício da Silva Batista - mauricio.batista@estudante.ifms.edu.br<br/>
->Gabriel Virgino de Oliveira - gabriel.oliveira6@estudante.ifms.edu.br<br/>
+>Gabriel Virgino de Oliveira - @Gabriel9816 - gabriel.oliveira6@estudante.ifms.edu.br<br/>
 
 
 
