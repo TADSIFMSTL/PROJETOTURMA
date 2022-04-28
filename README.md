@@ -17,6 +17,8 @@ Alguma descrição rápida e objetiva da API
 ><br/>
 >**Alunos:**<br/>
 >Maurício da Silva Batista - mauricio.batista@estudante.ifms.edu.br<br/>
+>Gabriel Virgino de Oliveira - gabriel.oliveira6@estudante.ifms.edu.br<br/>
+
 
 
 ### Descrição do Projeto
@@ -33,7 +35,10 @@ Alguma descrição rápida e objetiva da API
 
 ### Desenvolvedores
 > FrontEnd: <br/>
+> @Gabriel9816<br/>
+> <br/>
 > BackEnd: <br/>
+> <br/>
 > Template/Layout: Douglas <br/>
 
 
