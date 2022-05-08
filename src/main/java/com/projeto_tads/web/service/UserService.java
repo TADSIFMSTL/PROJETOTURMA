@@ -1,7 +1,6 @@
 package com.projeto_tads.web.service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 import com.projeto_tads.web.model.User;
@@ -33,7 +32,7 @@ public class UserService {
         return repository.findById(id).get(); 
     }
 
-    public void updateStudent(User user) {
+    public void updateUser(User user) {
         repository.save(user);
     }
 

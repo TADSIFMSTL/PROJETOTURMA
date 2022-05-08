@@ -67,7 +67,7 @@ public class UserController {
 	public String updateUser(@PathVariable("id") UUID id, @ModelAttribute User user) {
         service.insert(user);
 
-        return "redirect:/student/";
+        return "redirect:/users/";
     }
 		
 	
