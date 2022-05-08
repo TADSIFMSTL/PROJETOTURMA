@@ -5,11 +5,15 @@ import java.util.UUID;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 //@Table(name = "tb_user")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
    
     @Id
@@ -21,7 +25,7 @@ public class User {
 
     private boolean adm;
     
-    
+
 
 
      //Implementação do Relacionamento
