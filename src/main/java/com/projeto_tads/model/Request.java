@@ -1,5 +1,6 @@
 package com.projeto_tads.model;
 
+import java.util.List;
 import java.util.UUID;
 
 import javax.persistence.Entity;
@@ -19,6 +20,7 @@ public class Request {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     UUID id;
-    String prato;
-    String cliente;
-} 
+    List<String> dish;
+    String client;
+    Boolean paid;
+}
