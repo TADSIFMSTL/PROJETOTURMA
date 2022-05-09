@@ -25,13 +25,16 @@ public class BusinessHours{
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     
+    //selecionar data
     UUID id;
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date date;
     
+    //data e hora inicial
     @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
     private Date dateHourStart;
 
+    //data e hora final
     @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
     private Date dateHourEnd;
     
