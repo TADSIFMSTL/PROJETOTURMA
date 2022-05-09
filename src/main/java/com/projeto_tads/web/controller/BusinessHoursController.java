@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.projeto_tads.web.model.BusinessHours;
 
 @Controller
-@RequestMapping( "/BusinessHours" )
+@RequestMapping("/BusinessHours")
 public class BusinessHoursController {
 
     @GetMapping
