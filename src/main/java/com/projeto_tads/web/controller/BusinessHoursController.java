@@ -33,7 +33,7 @@ public class BusinessHoursController {
     @GetMapping
     public String main(Model model) {
         model.addAttribute("BusinessHours", new BusinessHours());
-        return " ";
+        return "BusinessHours ";
     }
 
     @PostMapping
