@@ -24,7 +24,7 @@ public class ShoppingService {
         shoppingRepository.save(shopping);
     }
     
-    public void delete(UUID id){
+    public void deleteById(UUID id){
         shoppingRepository.deleteById(id);
     }
     
