@@ -1,0 +1,116 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+
+section {
+  position: relative;
+  left: 100px;
+}
+
+
+nav {
+  float: left;
+	position: relative;
+	top: 0;
+  left: 0;
+	background: transparent;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	position: relative;
+  width: 70px;
+  cursor: pointer;
+	background: rgb(70, 69, 69);
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+nav ul li:after {
+	position: absolute;
+	background: rgb(117, 114, 114);
+	color: rgb(70, 69, 69);
+	top:0;
+	left: 70px;
+	width: 150px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after { 
+	content: "Produtos";
+	line-height: 88px;
+}
+nav ul li:nth-child(2):after { 
+	content: "Pedidos";
+	line-height: 88px;
+}
+nav ul li:nth-child(3):after { 
+	content: "Estoque";
+	line-height: 88px;
+}
+nav ul li:nth-child(4):after { 
+	content: "Clientes";
+	line-height: 88px;
+}
+nav ul li:nth-child(5):after { 
+	content: "Funcionarios";
+	line-height: 88px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+.fachada {
+  display: flex;
+  flex-direction: row;
+}
+
+.one{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 0px 0px 5px 5px;
+} 
+.two{
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 0px 0px 5px 5px;
+}
+.three{
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 0px 0px 5px 5px;
+}
+.four{
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  border-radius: 0px 0px 5px 5px;
+}
