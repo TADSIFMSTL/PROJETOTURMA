@@ -39,6 +39,6 @@ public class BusinessHoursController {
     @PostMapping
     public String save(BusinessHours businesshours, Model model) {
         model.addAttribute("businesshours", businesshours);
-        return "saved";
+        return "save";
     }
 }
