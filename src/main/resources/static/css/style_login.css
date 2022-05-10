@@ -9,13 +9,13 @@
   background: #2D2F36;
 }
 body {
-  background: white;
+  background: #5DCEAF;
   font-family: 'Inter UI', sans-serif;
   margin: 0;
   padding: 20px;
 }
 .page {
-  background: #e2e2e5;
+  background: #5DCEAF;
   display: flex;
   flex-direction: column;
   height: calc(100% - 40px);
