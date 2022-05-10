@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --background-color: rgb(42, 221, 161);
+    --color-font: black;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-font);
+}
+
+nav {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+.form-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-navbar input{
+    height: 15px;
+    width: 70px;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.fachada {
+    display: flex;
+    flex-direction: row;
+}
+
+.one{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 0px 0px 5px 5px;
+} 
+.two{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 0px 0px 5px 5px;
+}
+.three{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 0px 0px 5px 5px;
+}
+.four{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 0px 0px 5px 5px;
+}
