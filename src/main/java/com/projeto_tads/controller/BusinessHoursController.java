@@ -1,4 +1,4 @@
-package com.projeto_tads.web.controller;
+package com.projeto_tads.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

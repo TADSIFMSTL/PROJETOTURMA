@@ -1,10 +1,10 @@
-package com.projeto_tads.web.service;
+package com.projeto_tads.service;
 
 import java.util.List;
 import java.util.UUID;
 
-import com.projeto_tads.web.model.Shopping;
-import com.projeto_tads.web.repository.ShoppingRepository;
+import com.projeto_tads.model.Shopping;
+import com.projeto_tads.repository.ShoppingRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

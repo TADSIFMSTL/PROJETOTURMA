@@ -1,10 +1,10 @@
-package com.projeto_tads.web.controller;
+package com.projeto_tads.controller;
 
 import java.util.List;
 import java.util.UUID;
 
-import com.projeto_tads.web.model.User;
-import com.projeto_tads.web.service.UserService;
+import com.projeto_tads.model.User;
+import com.projeto_tads.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

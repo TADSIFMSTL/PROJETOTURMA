@@ -1,4 +1,4 @@
-package com.projeto_tads.web;
+package com.projeto_tads;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

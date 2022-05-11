@@ -1,4 +1,4 @@
-package com.projeto_tads.web.model;
+package com.projeto_tads.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +18,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Shopping {
+public class Adress {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     UUID id;
-    String name;
-    String telephone;
-    @OneToOne(mappedBy = "Adress")    
-    List<Adress> adress = new ArrayList<Adress>();
+    String neighborhood;
+    String country;
+    String state;
+    String city;
+    Float latitude;
+    Float longitude;
+    String street;
+    Float number;
+    @OneToOne(mappedBy = "Shopping")    
+    List<Shopping> shopping = new ArrayList<Shopping>();
 }
