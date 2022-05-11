@@ -1,6 +1,5 @@
 package com.projeto_tads.web.controller;
 
-import java.security.PublicKey;
 import java.util.List;
 import java.util.UUID;
 
