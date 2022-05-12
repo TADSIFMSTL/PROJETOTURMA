@@ -27,4 +27,7 @@ public class Shopping {
     String telephone;
     @OneToOne(mappedBy = "Adress")    
     List<Adress> adress = new ArrayList<Adress>();
+
+    // @OneToOne (mappedBy = "Restaurant")
+    // List<Restaurant> restaurant = new ArrayList<Restaurant>();
 }
