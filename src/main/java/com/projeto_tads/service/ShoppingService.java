@@ -24,11 +24,11 @@ public class ShoppingService {
         shoppingRepository.save(shopping);
     }
     
-    public void deleteById(UUID id){
+    public void deleteById(Long id){
         shoppingRepository.deleteById(id);
     }
     
-    public Shopping findById(UUID id){
+    public Shopping findById(Long id){
         return shoppingRepository.findById(id).get();
     }
 

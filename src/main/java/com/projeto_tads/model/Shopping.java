@@ -22,7 +22,7 @@ public class Shopping {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    UUID id;
+    long cnpj;
     String name;
     String telephone;
     @OneToOne(mappedBy = "Adress")    
