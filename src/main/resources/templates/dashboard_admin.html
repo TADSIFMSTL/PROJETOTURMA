@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style/dashboardAdmin.css">
+    <link rel="stylesheet" href="../static/style/chart.css">
     <title>Administrador</title>
 </head>
 
@@ -140,12 +141,19 @@
             </div>
             <div id="box-4" class="box">
                 <p>Produtos mais pedidos</p>
+                <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                <canvas id="myChart"></canvas>
+            </div>
             </div>
             <div id="box-5" class="box">
                 <p>Pedidos por tipo de entrega</p>
             </div>
         </section>
     </main>
-</body>
 
+    
+
+    <script src="../../../../node_modules/chart.js/dist/chart.js"></script>
+    <script src="../static/js/chartjs.js"></script>
+</body>
 </html>

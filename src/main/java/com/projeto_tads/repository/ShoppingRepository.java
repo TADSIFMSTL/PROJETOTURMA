@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface ShoppingRepository extends JpaRepository <Shopping, UUID>{
+public interface ShoppingRepository extends JpaRepository <Shopping, Long>{
     
 }

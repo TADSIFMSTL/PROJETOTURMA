@@ -208,7 +208,7 @@ main {
     margin: 100px;
     display: grid;
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 150px 300px;
+    grid-template-rows: 150px 500px;
     gap: 30px;
 }
 

@@ -22,9 +22,12 @@ public class Shopping {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    UUID id;
+    long cnpj;
     String name;
     String telephone;
     @OneToOne(mappedBy = "Adress")    
     List<Adress> adress = new ArrayList<Adress>();
+
+    // @OneToOne (mappedBy = "Restaurant")
+    // List<Restaurant> restaurant = new ArrayList<Restaurant>();
 }
