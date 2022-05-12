@@ -2,7 +2,6 @@ package com.projeto_tads.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,9 +21,12 @@ public class Shopping {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    UUID id;
+    long cnpj;
     String name;
     String telephone;
     @OneToOne(mappedBy = "Adress")    
     List<Adress> adress = new ArrayList<Adress>();
+
+    // @OneToOne (mappedBy = "Restaurant")
+    // List<Restaurant> restaurant = new ArrayList<Restaurant>();
 }

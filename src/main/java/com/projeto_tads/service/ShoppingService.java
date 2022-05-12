@@ -1,7 +1,6 @@
 package com.projeto_tads.service;
 
 import java.util.List;
-import java.util.UUID;
 
 import com.projeto_tads.model.Shopping;
 import com.projeto_tads.repository.ShoppingRepository;
@@ -24,11 +23,11 @@ public class ShoppingService {
         shoppingRepository.save(shopping);
     }
     
-    public void deleteById(UUID id){
+    public void deleteById(Long id){
         shoppingRepository.deleteById(id);
     }
     
-    public Shopping findById(UUID id){
+    public Shopping findById(Long id){
         return shoppingRepository.findById(id).get();
     }
 
