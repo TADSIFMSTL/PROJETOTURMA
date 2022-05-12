@@ -1,10 +1,10 @@
-package com.projeto_tads.web.service;
+package com.projeto_tads.service;
 
 import java.util.List;
 import java.util.UUID;
 
-import com.projeto_tads.web.model.User;
-import com.projeto_tads.web.repository.UserRepository;
+import com.projeto_tads.repository.UserRepository;
+import com.projeto_tads.model.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
