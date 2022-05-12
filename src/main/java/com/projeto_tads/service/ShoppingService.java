@@ -1,7 +1,6 @@
 package com.projeto_tads.service;
 
 import java.util.List;
-import java.util.UUID;
 
 import com.projeto_tads.model.Shopping;
 import com.projeto_tads.repository.ShoppingRepository;

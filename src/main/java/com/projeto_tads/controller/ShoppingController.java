@@ -3,7 +3,6 @@ package com.projeto_tads.controller;
 import com.projeto_tads.model.Shopping;
 import com.projeto_tads.service.ShoppingService;
 import java.util.List;
-import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
