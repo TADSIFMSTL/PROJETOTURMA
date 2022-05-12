@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --green-color: #4dd3c6;
+    --red-color: #c12138;
+    --greenleaf-color: #14ce40;
+    --rustyellow-color: #ebd429;
+    --petrolblue-color: #48a3cc;
+}
+
+@keyframes cores-animadas {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: green;
+    }
+
+    40% {
+        background-color: blue;
+    }
+
+    60% {
+        background-color: violet;
+    }
+
+    80% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+body {
+    background: var(--green-color);
+    background-image: radial-gradient(ellipse at center, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: repeat;
+    animation: cores-animadas;
+}
+
+nav {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+.form-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-navbar input {
+    height: 15px;
+    width: 70px;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.fachada {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.one {
+    width: 30px;
+    height: 30px;
+    background-color: var(--red-color);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.two {
+    width: 30px;
+    height: 30px;
+    background-color: var(--petrolblue-color);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.three {
+    width: 30px;
+    height: 30px;
+    background-color: var(--greenleaf-color);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.four {
+    width: 30px;
+    height: 30px;
+    background-color: var(--rustyellow-color);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.sidebar {
+    float: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.sidebar ul {
+    text-align: center;
+}
+
+.sidebar ul li {
+    position: relative;
+    width: 90px;
+    cursor: pointer;
+    background: rgb(70, 69, 69);
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+    border-radius: 0 10px 10px 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li:after {
+    position: absolute;
+    background: rgb(117, 114, 114);
+    color: rgb(255, 255, 255);
+    top: 0;
+    left: 60px;
+    width: 200px;
+    height: 100%;
+    opacity: 0.3;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+    border-radius: 0 10px 10px 0;
+}
+
+.sidebar ul li:nth-child(1):after {
+    content: "Produtos";
+    line-height: 88px;
+}
+
+.sidebar ul li:nth-child(2):after {
+    content: "Pedidos";
+    line-height: 88px;
+}
+
+.sidebar ul li:nth-child(3):after {
+    content: "Estoque";
+    line-height: 88px;
+}
+
+.sidebar ul li:nth-child(4):after {
+    content: "Clientes";
+    line-height: 88px;
+}
+
+.sidebar ul li:nth-child(5):after {
+    content: "Funcionarios";
+    line-height: 88px;
+}
+
+.sidebar ul li:hover {
+    transform: translateX(-70px);
+}
+
+.sidebar ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+.sidebar ul li>div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+}
+
+.sidebar ul li div {
+    position: relative;
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 150px 300px;
+    gap: 30px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#box-4 {
+    background-color: white;
+    grid-column: 1/3;
+}
+
+.container p {
+    margin: 10px;
+}
