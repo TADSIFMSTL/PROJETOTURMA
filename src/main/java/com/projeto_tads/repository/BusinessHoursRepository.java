@@ -1,8 +1,8 @@
-package com.projeto_tads.web.repository;
+package com.projeto_tads.repository;
 
 import java.util.UUID;
 
-import com.projeto_tads.web.model.BusinessHours;
+import com.projeto_tads.model.BusinessHours;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.projeto_tads.web.model;
+package com.projeto_tads.model;
 
 import java.sql.Date;
 import java.util.UUID;
