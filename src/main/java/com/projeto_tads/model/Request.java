@@ -17,10 +17,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Request {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     UUID id;
-    List<String> dish;
+    
     String client;
-    Boolean paid;
+    List<String> dish;
+    Status status;
 }
