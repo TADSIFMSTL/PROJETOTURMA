@@ -37,7 +37,7 @@ Alguma descrição rápida e objetiva da API
 > FrontEnd: <br/>
 > @Gabriel9816<br/>
 > <br/>
-> BackEnd: <br/>
+> BackEnd: <br/> CaioLFreitas98 <br/>
 > <br/>
 > Template/Layout: Douglas <br/>
 
