@@ -9,6 +9,8 @@ import com.projeto_tads.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import antlr.StringUtils;
+
 @Service
 public class UserService {
 
@@ -26,6 +28,9 @@ public class UserService {
     public void delete(UUID id) {
 
         repository.deleteById(id);
+        if(id == null ){
+            org.thymeleaf.util.StringUtils.isEmpty("vazio");
+        }
     }
 
     public User findById(UUID id){  

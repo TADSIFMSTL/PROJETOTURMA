@@ -1,6 +1,5 @@
 package com.projeto_tads.repository;
 
-import java.util.UUID;
 
 import com.projeto_tads.model.Shopping;
 
@@ -9,6 +8,6 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface ShoppingRepository extends JpaRepository <Shopping, UUID>{
+public interface ShoppingRepository extends JpaRepository <Shopping, Long>{
     
 }
