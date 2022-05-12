@@ -1,7 +1,9 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Inter UI', sans-serif;
 }
 
 :root {

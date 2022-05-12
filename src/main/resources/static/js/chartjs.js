@@ -1,38 +1,32 @@
-const ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById("myChart").getContext("2d");
 const myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: [
-          'Red',
-          'Blue',
-          'Yellow'
+  type: "pie",
+  data: {
+    labels: ["Pizza", "Esfiha", "Lanche", "Churrasco", "Macarrão"],
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [40, 10, 30, 5, 10],
+        backgroundColor: [
+          "#4dd3c6",
+          "#c12138",
+          "#14ce40",
+          "#ebd429",
+          "#48a3cc",
         ],
-        datasets: [{
-          label: 'My First Dataset',
-          data: [50, 50, 100],
-          backgroundColor: [
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
-          ],
-          hoverOffset: 4
-        }]
+        hoverOffset: 4,
       },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        },
-        layout: {
-            padding: {
-                left: 50,
-                right: 50,
-                bottom: 50,
-            }
-        }
-    }
+    ],
+  },
+  options: {
+    layout: {
+      padding: {
+        left: 50,
+        right: 50,
+        bottom: 50,
+      },
+    },
+  },
 });
 
-
-myChart.canvas.parentNode.style.width = '500px';
+myChart.canvas.parentNode.style.width = "500px";
