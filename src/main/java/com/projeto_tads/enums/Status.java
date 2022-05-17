@@ -1,6 +1,6 @@
-package com.projeto_tads.model;
+package com.projeto_tads.enums;
 
-enum Status {
+public enum Status {
     Waiting,
     Ongoing,
     Completed,

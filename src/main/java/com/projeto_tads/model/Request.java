@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.projeto_tads.enums.Status;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,7 +24,7 @@ public class Request {
     @GeneratedValue(strategy = GenerationType.AUTO)
     UUID id;
     
-    String client;
+    User client;
     List<String> dish;
     Status status;
 }
