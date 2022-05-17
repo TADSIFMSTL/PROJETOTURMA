@@ -19,8 +19,8 @@ public class ItemCategoryController {
     //metodo para deletar a categoria do item
     @GetMapping("/delete/{id}")
     public String deleteItemCategory(@PathVariable("id")UUID id){
-        var student = service.findById(id);
-        service.deleteItemCategory(student.get());
+        var itemCategory = service.findById(id);
+        service.deleteItemCategory(itemCategory.get());
 
         return "redirect:";
     }
