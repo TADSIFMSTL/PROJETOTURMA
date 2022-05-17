@@ -18,6 +18,7 @@ Alguma descrição rápida e objetiva da API
 >**Alunos:**<br/>
 >Maurício da Silva Batista - mauricio.batista@estudante.ifms.edu.br<br/>
 >Gabriel Virgino de Oliveira - @Gabriel9816 - gabriel.oliveira6@estudante.ifms.edu.br<br/>
+>Stela Regina Dalecio Sibrão - @steladalecio - steladalecio@hotmail.com
 
 
 
@@ -39,7 +40,7 @@ Alguma descrição rápida e objetiva da API
 > <br/>
 > BackEnd: <br/> CaioLFreitas98 <br/>
 > <br/>
-> Template/Layout: Douglas <br/>
+> Template/Layout: Stela <br/>
 
 
 tags:
