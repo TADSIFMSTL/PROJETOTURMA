@@ -1,0 +1,111 @@
+nav {
+    position: absolute;
+    padding-top: 40px;
+    align-items: center;
+    color: var(--c-white);
+    font-size: 1,5vh;
+    text-align: center;
+    position: relative;
+}
+
+.sidebar {
+    float: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.sidebar ul {
+    text-align: center;
+}
+
+.sidebar ul li {
+    position: relative;
+    width: 90px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+    border-radius: 0 10px 10px 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li:after {
+    position: absolute;
+    color: var(--c-white);
+    top: 0;
+    left: 60px;
+    width: 150px;
+    height: 100%;
+    opacity: 0.3;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+    border-radius: 0 10px 10px 0;
+}
+
+.sidebar ul li:nth-child(1) {
+    background-color: var( --c-one); 
+}
+.sidebar ul li:nth-child(2) {
+    background-color: var( --c-two);
+}
+.sidebar ul li:nth-child(3) {
+    background-color: var( --c-three);
+}
+.sidebar ul li:nth-child(4) {
+    background-color: var( --c-four);
+}
+.sidebar ul li:nth-child(5) {
+    background-color: var( --c-five);
+}
+
+
+.sidebar ul li:nth-child(1):after {
+    background-color: var( --c-two);
+    content: "Produtos";
+    line-height: 88px;
+}
+
+.sidebar ul li:nth-child(2):after {
+    background-color: var( --c-three);
+    content: "Pedidos";
+    line-height: 88px;
+}
+ 
+.sidebar ul li:nth-child(3):after {
+    background-color: var( --c-four);
+    content: "Estoque";
+    line-height: 88px;
+}
+
+.sidebar ul li:nth-child(4):after {
+    background-color: var( --c-five);
+    content: "Clientes";
+    line-height: 88px;
+}
+
+.sidebar ul li:nth-child(5):after {
+    background-color: var( --c-one);
+    content: "Funcionarios";
+    line-height: 88px;
+}
+
+.sidebar ul li:hover {
+    transform: translateX(-70px);
+}
+
+.sidebar ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+.sidebar ul li>div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+}
+
+.sidebar ul li div {
+    position: relative;
+}

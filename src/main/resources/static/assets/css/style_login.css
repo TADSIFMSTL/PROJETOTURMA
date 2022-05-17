@@ -8,12 +8,7 @@
 ::-moz-selection {
   background: #7a3d70;;
 }
-body {
-  background: #4dd3c6;
-  font-family: 'Inter UI', sans-serif;
-  margin: 0;
-  padding: 20px;
-}
+
 .page {
   background: #4dd3c6;
   display: flex;

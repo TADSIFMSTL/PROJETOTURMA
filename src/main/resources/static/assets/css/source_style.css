@@ -1,0 +1,33 @@
+:root {    
+    --c-one:#c12138; 
+    --c-two:#48a3cc;
+    --c-three:#14ce40;
+    --c-four:#ebd429;
+    --c-five:#7a3d70;
+
+    --c-white: #ffffff;
+
+    --c-text-primary: #1f1f1f;
+    --c-text-secondary:  #2e2e2e;
+    --c-text-tertiary: #313131;
+
+    --c-background:#4dd3c6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: var(--c-background);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}

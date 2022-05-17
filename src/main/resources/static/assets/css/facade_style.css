@@ -1,0 +1,27 @@
+.facade {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.one, .two, .three, .four, .five{
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.one {
+    background-color: var( --c-one);
+}
+.two {
+    background-color: var( --c-two);
+}
+.three {
+    background-color: var(--c-three);
+}
+.four {
+    background-color: var(--c-four);
+}
+.five {
+    background-color: var(--c-five);
+}
