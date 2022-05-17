@@ -33,7 +33,7 @@ public class ItemCategoryController {
     public String edititemcategory(@PathVariable("id") UUID id, Model model) {
         ItemCategory itemcategory = service.findById(id);
         model.addAttribute("itemCategory", itemcategory);
-        return "editarProf";
+        return "editcategory";
     }
 
     // metodo para deletar a categoria do item
