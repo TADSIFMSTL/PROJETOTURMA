@@ -3,13 +3,11 @@ package com.projeto_tads.service;
 import java.util.List;
 import java.util.UUID;
 
-import com.projeto_tads.repository.UserRepository;
 import com.projeto_tads.model.User;
+import com.projeto_tads.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import antlr.StringUtils;
 
 @Service
 public class UserService {
@@ -27,9 +25,10 @@ public class UserService {
 
     public void delete(UUID id) {
 
-        repository.deleteById(id);
-        if(id == null ){
+        if(id == null){
             org.thymeleaf.util.StringUtils.isEmpty("vazio");
+        }else {
+            repository.deleteById(id);
         }
     }
 
