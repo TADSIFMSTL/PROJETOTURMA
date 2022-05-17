@@ -1,13 +1,9 @@
 package com.projeto_tads.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,15 +14,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Shopping {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  long cnpj;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long cnpj;
-    String name;
-    String telephone;
-    @OneToOne(mappedBy = "Adress")    
-    List<Adress> adress = new ArrayList<Adress>();
-
-    // @OneToOne (mappedBy = "Restaurant")
-    // List<Restaurant> restaurant = new ArrayList<Restaurant>();
+  String name;
+  String telephone;
+  // @OneToOne(mappedBy = "Adress")
+  // List<Adress> adress = new ArrayList<Adress>();
+  
+  // @OneToOne (mappedBy = "Restaurant")
+  // List<Restaurant> restaurant = new ArrayList<Restaurant>();
 }
